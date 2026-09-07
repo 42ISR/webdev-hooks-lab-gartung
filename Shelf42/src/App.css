@@ -1,0 +1,81 @@
+:root {
+  --ink: #1c1712;
+  --surface: #241d17;
+  --surface-2: #2c231c;
+  --line: #3a3026;
+  --paper: #ece4d3;
+  --muted: #a89a84;
+  --muted-dim: #6f6353;
+  --gold: #c9a227;
+  --gold-dim: rgba(201, 162, 39, 0.14);
+  --wine: #8a3a3a;
+
+  --font-display: 'Lora', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius: 12px;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px 80px;
+}
+
+#root {
+  width: 100%;
+  max-width: 560px;
+  border: none;
+  min-height: auto;
+  display: block;
+  text-align: left;
+}
+
+.app {
+  width: 100%;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: linear-gradient(160deg, var(--gold), #9c7a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #1c1712;
+  font-size: 15px;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+}

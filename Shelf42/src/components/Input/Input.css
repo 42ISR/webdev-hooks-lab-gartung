@@ -1,0 +1,19 @@
+.input {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--paper);
+  padding: 11px 14px;
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  font-family: inherit;
+}
+
+.input::placeholder { 
+  color: var(--muted-dim); 
+}
+
+.input:focus { 
+  outline: none; 
+  border-color: var(--gold); 
+}
